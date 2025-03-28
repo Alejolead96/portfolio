@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className=" h-screen flex items-center">
       <NavBar />
-      <div className="container mx-auto flex">
+      <div className="container mx-auto flex items-center">
         <div className="basis-2/4 flex flex-col gap-4 text-light dark:text-dark">
           <h1 className="text-5xl font-bold ">My name is Alejandro</h1>
           <p>
@@ -34,9 +34,8 @@ const Header = () => {
             </button>
           </div>
         </div>
-        <div className="basis-2/4">
-          <img src="" alt="" />
-          <h1>Hola</h1>
+        <div className="basis-2/4 flex justify-center">
+          <img className="" src="/me.png" alt="" /> 
         </div>
       </div>
     </div>

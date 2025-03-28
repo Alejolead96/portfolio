@@ -86,11 +86,11 @@ const About = () => {
                 </TabsTrigger>
               </TabsList>
               <TabsContent
-                className="flex flex-wrap gap-2 mt-4"
+                className="grid grid-cols-4 gap-2 mt-4"
                 value="frontend"
               >
                 {listSkills.frontend.map((value) => (
-                  <div className="bg-button-light dark:bg-button-dark dark:border-1 w-44 p-4 rounded-sm flex items-center gap-2">
+                  <div key={value} className="bg-button-light dark:bg-button-dark dark:border-1 p-4 rounded-sm flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-gradient-to-r from-teal-500 to-indigo-500"></div>
                     <p>{value}</p>
                   </div>
@@ -101,7 +101,7 @@ const About = () => {
                 value="Backend"
               >
                 {listSkills.backend.map((value) => (
-                  <div className="bg-button-light dark:bg-button-dark dark:border-1 w-44 p-4 rounded-sm flex items-center gap-2">
+                  <div key={value} className="bg-button-light dark:bg-button-dark dark:border-1 w-44 p-4 rounded-sm flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-gradient-to-r from-teal-500 to-indigo-500"></div>
                     <p>{value}</p>
                   </div>
@@ -109,7 +109,7 @@ const About = () => {
               </TabsContent>
               <TabsContent className="flex flex-wrap gap-2 mt-4" value="Others">
                 {listSkills.others.map((value) => (
-                  <div className="bg-button-light dark:bg-button-dark dark:border-1 w-44 p-4 rounded-sm flex items-center gap-2">
+                  <div key={value} className="bg-button-light dark:bg-button-dark dark:border-1 w-44 p-4 rounded-sm flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-gradient-to-r from-teal-500 to-indigo-500"></div>
                     <p>{value}</p>
                   </div>
